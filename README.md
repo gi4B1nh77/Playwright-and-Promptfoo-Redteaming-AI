@@ -507,6 +507,7 @@ redteam:
     - basic # Original plugin tests without any additional strategies or optimizations
     - jailbreak:meta # Meta-agent that builds its own attack taxonomy and learns from full attack history
     - jailbreak:composite # Combines multiple jailbreak techniques for enhanced effectiveness
+
 ~~~
 
 
