@@ -407,5 +407,23 @@ if (!ok) {
 module.exports = HealthcareUiProvider;
 module.exports.default = HealthcareUiProvider;
 ~~~
+## 2.	How to use?
+### 1. Create a shortcut
+- Login as pentester
+- Enter this command, by doing this you can enter the command start_promptfoo to the environment that run Promptfoo:
+~~~bash
+alias start_promptfoo='cd ~/promptfoo_project && nvm use 20 --silent && echo "Promptfoo environment ready (Node $(node -v))"'
+~~~
+- Start this:
+~~~bash
+start_promptfoo
+~~~
+### 2. Redteam an AI
+~~~bash
+npx promptfoo@latest init
+~~~
+After init the set up, it will create promptfooconfig.yaml (this file will act as the examiner) automatically
+- Choose redteam:
+<img width="725" height="309" alt="image" src="https://github.com/user-attachments/assets/f423358c-afc8-42a7-9170-cf4fe5b2d727" />
 
   
