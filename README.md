@@ -439,6 +439,7 @@ This application is an AI-powered genetics and healthcare advisory assistant ope
 ### 3. Intergrate it with Playwright
 - Create a file named redteam-ui.yaml to implement the testing through UI, we will copy the content from promptfooconfig.yaml but change the target look the code bellow:
 ~~~bash
+
 targets:
   - id: file://./providers/healthcare-ui.js // Here the path to the file
     label: healthcare-agent-ui
