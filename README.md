@@ -537,20 +537,26 @@ Run this on our host(window or the device that remote to the Promptfoo):
 ~~~bash
 ssh -L 15501:127.0.0.1:15500 pentester@172.16.24.42
 ~~~
-### Background running
+### 6. Background running
 ~~~bash
 tmux promptfoo
 npx promptfoo redteam run -c BeGen/redteam-ui.yaml -j 2
 ~~~
-Then 
+- Then: 
+
 Ctrt + B --> %
-Then run:
+
+- Then run:
 ~~~bash
 npx promptfoo view
 ~~~
-Detach session:
+
+- Detach session:
+
 Ctrl + B --> D
-Return Session:
+
+- Return Session:
+- 
 ~~~bash
 tmux attach -t promptfoo
 ~~~
