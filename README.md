@@ -556,7 +556,7 @@ npx promptfoo view
 Ctrl + B --> D
 
 - Return Session:
-- 
+ 
 ~~~bash
 tmux attach -t promptfoo
 ~~~
