@@ -330,7 +330,6 @@ class HealthcareUiProvider {
 const CHAT_INPUT_TIMEOUT = 180000;
 
 async function ensureChatReady(p) {
-  // nếu bị đá auth bất kỳ lúc nào, trả về false để heal
   if (isAuthRedirect(p.url())) return false;
 
   try {
@@ -345,7 +344,6 @@ async function ensureChatReady(p) {
 let ok = await ensureChatReady(page);
 
 if (!ok) {
-  // debug log (rất hữu ích khi errors=7/1505)
   console.error("[healthcare-ui] chat input not ready, url=", page.url());
 
   // reload once
