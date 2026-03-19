@@ -4,6 +4,7 @@ An end-to-end security evaluation framework that simulates real-world adversary 
 Reference: https://www.promptfoo.dev/docs/installation/
 
 ## 1.	Initial Configuration
+### 1. Prepare
 - Create new user:
 ~~~bash
 sudo adduser pentester
@@ -21,7 +22,7 @@ source ~/.bashrc
 nvm install 20
 nvm use 20
 ~~~
-###2. Install Promptfoo
+### 2. Install Promptfoo
 ~~~bash
 mkdir ~/promptfoo_project && cd ~/promptfoo_project
 npm init -y
@@ -31,7 +32,7 @@ npm install promptfoo
 ~~~bash
 npx promptfoo init
 ~~~
-###3. Install Playwright in Promptfoo (This will help you redteam AI by acting as USER, ex: Chatbox,...)
+### 3. Install Playwright in Promptfoo (This will help you redteam AI by acting as USER, ex: Chatbox,...)
 - Use provider:
 ~~~bash
 npm install playwright @playwright/browser-chromium plywright-extra puppeteer-extra-plugin-stealth
